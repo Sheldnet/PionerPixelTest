@@ -1,6 +1,3 @@
-/* ============================================================
- * 3.  Фильтр поиска (immutable-record)
- * ============================================================ */
 package org.example.pionerpixeltest.service;
 
 import java.time.LocalDate;
