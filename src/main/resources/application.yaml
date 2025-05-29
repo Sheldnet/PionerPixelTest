@@ -1,0 +1,28 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://${POSTGRES_HOST:localhost}:${POSTGRES_PORT:5432}/${POSTGRES_DB:user_service}
+    username: ${POSTGRES_USER:demo}
+    password: ${POSTGRES_PASSWORD:demo}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        format_sql: true
+    open-in-view: false
+
+  flyway:
+    enabled: true
+    baseline-on-migrate: true
+    locations: classpath:db/migration
+
+server:
+  port: 8080
+
+jwt:
+  secret: ${JWT_SECRET:change_me}
+  expiration-ms: 3600000
+  security:
+    jwt:
+      secret: "change_me_to_a_long_random_string_32chars_min"
