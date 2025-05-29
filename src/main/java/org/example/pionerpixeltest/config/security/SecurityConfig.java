@@ -52,13 +52,13 @@ public class SecurityConfig {
     @Bean
     public AuthenticationProvider daoAuthProvider(PasswordEncoder passwordEncoder) {
         DaoAuthenticationProvider provider = new DaoAuthenticationProvider();
-        provider.setPasswordEncoder(passwordEncoder);          // ← бин передаётся аргументом
+        provider.setPasswordEncoder(passwordEncoder);
         provider.setUserDetailsService(userDetailsService);
         return provider;
     }
 
 
-    @Bean                    // стандартный BCrypt удобен и для unit-тестов
+    @Bean
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }

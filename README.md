@@ -73,6 +73,10 @@ Swagger UI
 Документация API доступна по адресу:
 http://localhost:8080/swagger-ui/index.html
 
+перейдите в auth-controller/login
+вставтье bob@example.com / 123
+
+у вас будет токен который нужно скопировать и передать в ![img.png](img.png)
 ## Основные API endpoints
 Аутентификация:
 
