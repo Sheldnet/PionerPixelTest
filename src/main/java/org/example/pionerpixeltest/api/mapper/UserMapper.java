@@ -1,9 +1,9 @@
 package org.example.pionerpixeltest.api.mapper;
 
 import org.example.pionerpixeltest.api.dto.UserDto;
-import org.example.pionerpixeltest.domain.EmailData;
-import org.example.pionerpixeltest.domain.PhoneData;
-import org.example.pionerpixeltest.domain.User;
+import org.example.pionerpixeltest.entity.EmailData;
+import org.example.pionerpixeltest.entity.PhoneData;
+import org.example.pionerpixeltest.entity.User;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 

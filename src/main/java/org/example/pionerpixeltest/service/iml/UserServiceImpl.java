@@ -8,10 +8,10 @@ import org.example.pionerpixeltest.dao.AccountRepository;
 import org.example.pionerpixeltest.dao.EmailDataRepository;
 import org.example.pionerpixeltest.dao.PhoneDataRepository;
 import org.example.pionerpixeltest.dao.UserRepository;
-import org.example.pionerpixeltest.domain.Account;
-import org.example.pionerpixeltest.domain.EmailData;
-import org.example.pionerpixeltest.domain.PhoneData;
-import org.example.pionerpixeltest.domain.User;
+import org.example.pionerpixeltest.entity.Account;
+import org.example.pionerpixeltest.entity.EmailData;
+import org.example.pionerpixeltest.entity.PhoneData;
+import org.example.pionerpixeltest.entity.User;
 import org.example.pionerpixeltest.service.AccountService;
 import org.example.pionerpixeltest.service.UserFilter;
 import org.example.pionerpixeltest.service.UserService;
@@ -27,7 +27,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.NoSuchElementException;
-import java.util.Optional;
 import java.util.Set;
 import java.util.stream.Collectors;
 

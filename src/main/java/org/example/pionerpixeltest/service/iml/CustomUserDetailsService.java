@@ -2,13 +2,11 @@ package org.example.pionerpixeltest.service.iml;
 
 import lombok.RequiredArgsConstructor;
 import org.example.pionerpixeltest.dao.UserRepository;
-import org.example.pionerpixeltest.domain.User;
+import org.example.pionerpixeltest.entity.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
-
-import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor

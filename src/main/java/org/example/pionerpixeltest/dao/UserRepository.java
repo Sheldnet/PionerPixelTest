@@ -1,6 +1,6 @@
 package org.example.pionerpixeltest.dao;
 
-import org.example.pionerpixeltest.domain.User;
+import org.example.pionerpixeltest.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.stereotype.Repository;

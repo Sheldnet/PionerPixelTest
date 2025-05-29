@@ -470,9 +470,9 @@ UserMapper.java:
 package org.example.pionerpixeltest.api.mapper;
 
 import org.example.pionerpixeltest.api.dto.UserDto;
-import org.example.pionerpixeltest.domain.EmailData;
-import org.example.pionerpixeltest.domain.PhoneData;
-import org.example.pionerpixeltest.domain.User;
+import org.example.pionerpixeltest.entity.EmailData;
+import org.example.pionerpixeltest.entity.PhoneData;
+import org.example.pionerpixeltest.entity.User;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 
@@ -775,7 +775,7 @@ AccountRepository.java:
 package org.example.pionerpixeltest.dao;
 
 import jakarta.persistence.LockModeType;
-import org.example.pionerpixeltest.domain.Account;
+import org.example.pionerpixeltest.entity.Account;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Lock;
 import org.springframework.data.jpa.repository.Query;
@@ -806,7 +806,7 @@ EmailDataRepository.java:
 package org.example.pionerpixeltest.dao;
 
 import jakarta.validation.constraints.NotEmpty;
-import org.example.pionerpixeltest.domain.EmailData;
+import org.example.pionerpixeltest.entity.EmailData;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;
@@ -826,7 +826,7 @@ PhoneDataRepository.java:
 package org.example.pionerpixeltest.dao;
 
 import jakarta.validation.constraints.NotEmpty;
-import org.example.pionerpixeltest.domain.PhoneData;
+import org.example.pionerpixeltest.entity.PhoneData;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;
@@ -845,7 +845,7 @@ UserRepository.java:
 ```
 package org.example.pionerpixeltest.dao;
 
-import org.example.pionerpixeltest.domain.User;
+import org.example.pionerpixeltest.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.stereotype.Repository;
@@ -865,7 +865,7 @@ public interface UserRepository extends JpaRepository<User, Long>, JpaSpecificat
 
 Account.java:
 ```
-package org.example.pionerpixeltest.domain;
+package org.example.pionerpixeltest.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -896,7 +896,7 @@ public class Account {
 
 EmailData.java:
 ```
-package org.example.pionerpixeltest.domain;
+package org.example.pionerpixeltest.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -927,7 +927,7 @@ public class EmailData {
 
 PhoneData.java:
 ```
-package org.example.pionerpixeltest.domain;
+package org.example.pionerpixeltest.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -955,7 +955,7 @@ public class PhoneData {
 
 User.java:
 ```
-package org.example.pionerpixeltest.domain;
+package org.example.pionerpixeltest.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -1003,7 +1003,7 @@ AccountService.java:
 ```
 package org.example.pionerpixeltest.service;
 
-import org.example.pionerpixeltest.domain.Account;
+import org.example.pionerpixeltest.entity.Account;
 
 import java.math.BigDecimal;
 
@@ -1135,7 +1135,7 @@ import jakarta.annotation.PostConstruct;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.example.pionerpixeltest.dao.AccountRepository;
-import org.example.pionerpixeltest.domain.Account;
+import org.example.pionerpixeltest.entity.Account;
 import org.example.pionerpixeltest.service.AccountService;
 import org.example.pionerpixeltest.service.InitialBalanceHolder;
 import org.springframework.stereotype.Service;
@@ -1299,7 +1299,7 @@ package org.example.pionerpixeltest.service.iml;
 
 import lombok.RequiredArgsConstructor;
 import org.example.pionerpixeltest.dao.UserRepository;
-import org.example.pionerpixeltest.domain.User;
+import org.example.pionerpixeltest.entity.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -1396,10 +1396,10 @@ import org.example.pionerpixeltest.dao.AccountRepository;
 import org.example.pionerpixeltest.dao.EmailDataRepository;
 import org.example.pionerpixeltest.dao.PhoneDataRepository;
 import org.example.pionerpixeltest.dao.UserRepository;
-import org.example.pionerpixeltest.domain.Account;
-import org.example.pionerpixeltest.domain.EmailData;
-import org.example.pionerpixeltest.domain.PhoneData;
-import org.example.pionerpixeltest.domain.User;
+import org.example.pionerpixeltest.entity.Account;
+import org.example.pionerpixeltest.entity.EmailData;
+import org.example.pionerpixeltest.entity.PhoneData;
+import org.example.pionerpixeltest.entity.User;
 import org.example.pionerpixeltest.service.AccountService;
 import org.example.pionerpixeltest.service.UserFilter;
 import org.example.pionerpixeltest.service.UserService;
@@ -1763,7 +1763,7 @@ AccountServiceTest.java:
 package org.example.pionerpixeltest.service;
 
 import org.example.pionerpixeltest.dao.AccountRepository;
-import org.example.pionerpixeltest.domain.Account;
+import org.example.pionerpixeltest.entity.Account;
 import org.example.pionerpixeltest.service.iml.AccountServiceImpl;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -1929,9 +1929,9 @@ import org.example.pionerpixeltest.dao.AccountRepository;
 import org.example.pionerpixeltest.dao.EmailDataRepository;
 import org.example.pionerpixeltest.dao.PhoneDataRepository;
 import org.example.pionerpixeltest.dao.UserRepository;
-import org.example.pionerpixeltest.domain.Account;
-import org.example.pionerpixeltest.domain.EmailData;
-import org.example.pionerpixeltest.domain.User;
+import org.example.pionerpixeltest.entity.Account;
+import org.example.pionerpixeltest.entity.EmailData;
+import org.example.pionerpixeltest.entity.User;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;

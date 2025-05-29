@@ -1,7 +1,7 @@
 package org.example.pionerpixeltest.dao;
 
 import jakarta.validation.constraints.NotEmpty;
-import org.example.pionerpixeltest.domain.PhoneData;
+import org.example.pionerpixeltest.entity.PhoneData;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

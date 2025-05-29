@@ -1,7 +1,7 @@
 package org.example.pionerpixeltest.dao;
 
 import jakarta.persistence.LockModeType;
-import org.example.pionerpixeltest.domain.Account;
+import org.example.pionerpixeltest.entity.Account;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Lock;
 import org.springframework.data.jpa.repository.Query;

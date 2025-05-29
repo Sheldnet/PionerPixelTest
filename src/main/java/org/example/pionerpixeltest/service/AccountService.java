@@ -1,6 +1,6 @@
 package org.example.pionerpixeltest.service;
 
-import org.example.pionerpixeltest.domain.Account;
+import org.example.pionerpixeltest.entity.Account;
 
 import java.math.BigDecimal;
 

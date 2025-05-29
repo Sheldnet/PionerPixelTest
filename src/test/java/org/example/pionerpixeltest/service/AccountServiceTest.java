@@ -1,7 +1,7 @@
 package org.example.pionerpixeltest.service;
 
 import org.example.pionerpixeltest.dao.AccountRepository;
-import org.example.pionerpixeltest.domain.Account;
+import org.example.pionerpixeltest.entity.Account;
 import org.example.pionerpixeltest.service.iml.AccountServiceImpl;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

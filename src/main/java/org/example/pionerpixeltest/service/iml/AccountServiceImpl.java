@@ -4,7 +4,7 @@ import jakarta.annotation.PostConstruct;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.example.pionerpixeltest.dao.AccountRepository;
-import org.example.pionerpixeltest.domain.Account;
+import org.example.pionerpixeltest.entity.Account;
 import org.example.pionerpixeltest.service.AccountService;
 import org.example.pionerpixeltest.service.InitialBalanceHolder;
 import org.springframework.stereotype.Service;

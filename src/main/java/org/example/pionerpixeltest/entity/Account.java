@@ -1,4 +1,4 @@
-package org.example.pionerpixeltest.domain;
+package org.example.pionerpixeltest.entity;
 
 import jakarta.persistence.*;
 import lombok.*;

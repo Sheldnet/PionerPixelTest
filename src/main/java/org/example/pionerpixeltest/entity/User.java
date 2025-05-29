@@ -1,11 +1,11 @@
-package org.example.pionerpixeltest.domain;
+package org.example.pionerpixeltest.entity;
 
 import jakarta.persistence.*;
-import lombok.*;
+import lombok.Getter;
+import lombok.Setter;
 import org.hibernate.annotations.OnDelete;
 import org.hibernate.annotations.OnDeleteAction;
 
-import java.sql.ConnectionBuilder;
 import java.time.LocalDate;
 import java.util.Set;
 
